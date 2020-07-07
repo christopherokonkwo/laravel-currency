@@ -29,7 +29,7 @@ class Option
      */
     public function __construct(string $value, BaseCurrency $currency)
     {
-        $this->value = $value;
+        $this->value = $currency->code();
         $this->label = $currency->label();
     }
 
